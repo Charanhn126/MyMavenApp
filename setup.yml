@@ -1,6 +1,6 @@
  - name: Basic server setup
    hosts: localhost  # Assuming Jenkins is running on the same machine
-   become: true       # Use sudo for elevated privileges
+   become: no      # Use sudo for elevated privileges
    tasks:
      - name: Example task
        debug:
